@@ -216,6 +216,7 @@ GameObject:
   - component: {fileID: 519482057}
   - component: {fileID: 519482056}
   - component: {fileID: 519482055}
+  - component: {fileID: 519482059}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -291,12 +292,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519482054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.77, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519482059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519482054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d85111009d4c1c458adb806b0ba41f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 3.5
+  _laserPrefab: {fileID: 7736534240102101029, guid: f9c1814e2d8d10e43afbf6e50de33e6a,
+    type: 3}
+  _fireRate: 0.15
 --- !u!1 &1308680771
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,8 +1,8 @@
-import { log } from '../log.js';
-import logoImg from '../assets/logo.png';
+import { log } from "../log.js";
+import logoImg from "../assets/logo.png";
 
 export default function Header() {
-  log('<Header /> rendered', 1);
+  log("<Header /> rendered", 1);
 
   return (
     <header id="main-header">

@@ -6,9 +6,12 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private float _speed = 4.0f;
 
+    private Player _player;
+
     void Start()
     {
         transform.position = new Vector3(UnityEngine.Random.Range(-8, 8), 7, 0);
+        _player = GameObject.Find("Player").GetComponent<Player>();
     }
 
     void Update()
@@ -36,6 +39,11 @@ public class Enemy : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Laser"))
         {
+            if (_player != null)
+            {
+                _player.IncrementScore(10);
+            }
+
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
